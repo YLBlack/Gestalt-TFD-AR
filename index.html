@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>غيستالت: اليوم الخامس — GESTALT: The Fifth Day</title>
+  <meta name="description" content="الموقع العربي غير الرسمي للعبة الرعب النفسي GESTALT: The Fifth Day — القصة، الأيام الخمسة، الشخصيات، النهايات، والتحذيرات.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="preload" href="assets/fonts/Truetypewriter.ttf?v=2" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/hero.png" as="image">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <noscript>
+    <style>
+      /* بدون جافاسكربت: لا شاشة تحذير، وكل المحتوى ظاهر فورًا */
+      #splash { display: none !important; }
+      body.locked { overflow: auto; }
+      .tw-box, .q-line, .card, .dev-box { opacity: 1 !important; transform: none !important; }
+      .tw { min-height: 0 !important; }
+    </style>
+  </noscript>
+</head>
+<body class="locked">
+
+  <a class="skip" href="#story">تخطَّ إلى المحتوى</a>
+
+  <!-- شاشة التحذير الافتتاحية — مثل شاشة اللعبة نفسها -->
+  <div id="splash" role="dialog" aria-modal="true" aria-labelledby="splashTitle" aria-describedby="splashBody">
+    <div class="splash-inner">
+      <p id="splashTitle" class="splash-title">تحذير</p>
+      <div id="splashBody" class="splash-text">
+        <p>هذه اللعبة غير مناسبة للأطفال أو لمن يتأثرون بسهولة.</p>
+        <p>يرجى الاطلاع على قائمة «التحذيرات» للاطلاع على القائمة الكاملة للتحذيرات الموجودة في هذه اللعبة.</p>
+        <p>يُنصح اللاعبون بتوخي الحذر.</p>
+      </div>
+      <button id="enterBtn" class="btn btn-red" type="button">ادخل</button>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <nav aria-label="التنقل الرئيسي">
+      <a class="brand" href="#hero">غيستالت<span class="cursor" aria-hidden="true"></span></a>
+      <div class="links">
+        <a href="#story">القصة</a>
+        <a href="#days">الأيام</a>
+        <a href="#characters">الشخصيات</a>
+        <a href="#endings">النهايات</a>
+        <a href="#localization">التعريب</a>
+        <a href="#triggers">التحذيرات</a>
+      </div>
+      <button id="audioToggle" type="button" aria-pressed="false" aria-label="تشغيل الموسيقى أو إيقافها" title="الموسيقى">♪</button>
+    </nav>
+  </header>
+
+  <audio id="ambience" src="audio/theme.mp3" loop preload="none"></audio>
+
+  <main id="main">
+
+    <h1 class="visually-hidden">غيستالت: اليوم الخامس — الموقع العربي للعبة</h1>
+
+    <!-- البطل -->
+    <section id="hero" aria-label="المقدمة" aria-roledescription="قسم البطل">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <img class="hero-logo" src="assets/title.png" alt="GESTALT: The Fifth Day — غيستالت: اليوم الخامس" width="3073" height="1602">
+        <p class="tagline tw">لا يمكنكِ تسمية الأشياء التي تعيش هنا 'أشباحاً'…<br>مهما كانت... إنها أقدم بكثير من الأشباح.</p>
+        <div class="cta-row">
+          <a class="btn btn-red" href="#story">قراءة القصة</a>
+          <a class="btn" href="#endings">رؤية النهايات</a>
+        </div>
+        <p class="hero-note">لعبة رعب نفسي من تطوير <span class="lat" dir="ltr">KinjaKo</span> — موقع تعريفي عربي غير رسمي</p>
+      </div>
+      <a class="scroll-hint" href="#story" aria-label="انزل إلى القصة">▼</a>
+    </section>
+
+    <!-- القصة -->
+    <section id="story" class="sec">
+      <p class="kicker lat" dir="ltr">MY NAME IS WICKE</p>
+      <h2 class="sec-title">القصة</h2>
+      <div class="tw-group story-boxes">
+        <div class="tw-box"><p class="tw">اسمي ويكينا غيستالت.</p></div>
+        <div class="tw-box"><p class="tw">و... أنا أعيش في منزل مسكون.</p></div>
+        <div class="tw-box"><p class="tw">لقد ورثته من تلك العجوز المجنونة التي كانت تعيش في مسقط رأسي. وحتى يومنا هذا، لا أعرف لماذا تركت لي منزلها في وصيتها.</p></div>
+        <div class="tw-box"><p class="tw">لم نكن أقارب. ولم نتحدث مع بعضنا البعض قط.</p></div>
+        <div class="tw-box"><p class="tw">لأكون صادقة، لقد أرعبتني بشدة عندما كنت طفلة.</p></div>
+        <div class="tw-box"><p class="tw">لا أعرف لماذا قبلت العرض لأخذه منها. على ما أعتقد أن المنزل المجاني هو منزل مجاني.</p></div>
+        <div class="tw-box"><p class="tw">حتى لو كان منزلاً مكتظاً بالأشباح.</p></div>
+        <div class="tw-box"><p class="tw">لا... أعتقد أن هذا ليس صحيحاً تماماً.</p></div>
+        <div class="tw-box"><p class="tw">لا يمكنكِ تسمية الأشياء التي تعيش هنا 'أشباحاً'.</p></div>
+        <div class="tw-box old"><p class="tw">...إنها أقدم بكثير من الأشباح.</p></div>
+      </div>
+    </section>
+
+    <!-- الأيام الخمسة -->
+    <section id="days" class="sec">
+      <p class="kicker lat" dir="ltr">FIVE DAYS</p>
+      <h2 class="sec-title">الأيام الخمسة</h2>
+      <p class="sec-sub">خمسة أيام في البيت. كل يومٍ له سيناريوهاته، وكل سيناريو له نهايتان: واحدة تُرضي البيت، وأخرى تُغضبه.</p>
+      <div class="grid days-grid">
+        <article class="card day">
+          <span class="num lat" dir="ltr" aria-hidden="true">I</span>
+          <h3>اليوم الأول</h3>
+          <p>أول ليلة في البيت. استكشف الغرف، واكتشف أن بعض الأشياء هناك تستكشفك أيضًا.</p>
+          <ul class="chips"><li>الغرف</li><li>الجزار</li><li>التلفاز</li></ul>
+        </article>
+        <article class="card day">
+          <span class="num lat" dir="ltr" aria-hidden="true">II</span>
+          <h3>اليوم الثاني</h3>
+          <p>حركة خلف الجدران، بثٌّ قديم يعرف اسمك، وأمٌّ في القبو لا تحب أن تنتظر.</p>
+          <ul class="chips"><li>الجرذان</li><li>الراديو</li><li>الأم</li></ul>
+        </article>
+        <article class="card day">
+          <span class="num lat" dir="ltr" aria-hidden="true">III</span>
+          <h3>اليوم الثالث</h3>
+          <p>إيما تزور البيت. حفل استحضار الأرواح يتّجه إلى مكانه الخطأ، بالوعةٌ تتنفّس، ونباتاتٌ في الفناء جائعة.</p>
+          <ul class="chips"><li>إيما</li><li>البالوعة</li><li>النباتات</li></ul>
+        </article>
+        <article class="card day">
+          <span class="num lat" dir="ltr" aria-hidden="true">IV</span>
+          <h3>اليوم الرابع</h3>
+          <p>تدريبٌ على عيش حياةٍ طبيعية، قفلٌ يُفتح بالأرقام الصحيحة فقط، وطقسٌ أخير في القبو.</p>
+          <ul class="chips"><li>التدريب</li><li>الخلود</li><li>الطقس</li></ul>
+        </article>
+        <article class="card day">
+          <span class="num lat" dir="ltr" aria-hidden="true">V</span>
+          <h3>اليوم الخامس</h3>
+          <p>البومُ رحلت. اليوم هو اليوم. لا يتبقّى سوى ملاكٍ واحد واختيارٍ واحد.</p>
+          <ul class="chips"><li>الملاك</li><li>النهايات</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- الشخصيات -->
+    <section id="characters" class="sec">
+      <p class="kicker lat" dir="ltr">WHO LIVES HERE</p>
+      <h2 class="sec-title">الشخصيات</h2>
+      <div class="grid chars-grid">
+        <article class="card char">
+          <h3>ويكينا غيستالت <span class="lat" dir="ltr">WICKE</span></h3>
+          <p>موظفة مكتبٍ منهكة ورثت بيتًا لم تطلبه. تحاول الإصلاح، والتنظيف، والنجاة. ليلةً بعد ليلة.</p>
+        </article>
+        <article class="card char">
+          <h3>إيما تايلور <span class="lat" dir="ltr">EMMA</span></h3>
+          <p>صديقة ويكي. تحمل سكاكين أكثر مما يحتاج أي إنسان، وتزور البيت في أسوأ الأوقات الممكنة.</p>
+        </article>
+        <article class="card char">
+          <h3>الحسد <span class="lat" dir="ltr">ENVY</span></h3>
+          <p>شيءٌ يسكن البيت ويتوقّ إلى ما لديك. لا تتركه يدخل رأسك، ولا مطبخك.</p>
+        </article>
+        <article class="card char">
+          <h3>الأم <span class="lat" dir="ltr">THE MOTHER</span></h3>
+          <p>في القبو، هناك أمٌّ تنتظر أطفالها. لا تجعلها تنتظر طويلًا.</p>
+        </article>
+        <article class="card char">
+          <h3>الراديو <span class="lat" dir="ltr">THE RADIO</span></h3>
+          <p>بثٌّ يعرف اسمك ويعرف بيتك. استمع جيدًا: هل يحذّرك… أم يستدعيك؟</p>
+        </article>
+        <article class="card char">
+          <h3>الملاك <span class="lat" dir="ltr">THE ANGEL</span></h3>
+          <p>يحمل اسمًا من أربعة مقاطع وصوتًا يوحي أن كل شيء سيكون على ما يرام. قد يكون مخادعًا. قد يكون صادقًا.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- النهايات -->
+    <section id="endings" class="sec">
+      <p class="kicker lat" dir="ltr">ACHIEVEMENTS</p>
+      <h2 class="sec-title">النهايات</h2>
+      <p class="sec-sub">خمس نهايات، كما في لوحة الإنجازات داخل اللعبة. مرّر المؤشّر — أو ركّز باللوحة المفاتيح — لكشف وصف كل واحدة.</p>
+      <div class="grid ends-grid">
+        <article class="card end">
+          <header><span class="lat" dir="ltr">ENDING I</span></header>
+          <h3>النهاية الحتمية</h3>
+          <p class="lat end-en" dir="ltr">AN INEVITABLE END</p>
+          <p class="desc"><span class="q">؟؟؟</span> أحصل على النهاية الأولى.</p>
+        </article>
+        <article class="card end">
+          <header><span class="lat" dir="ltr">ENDING II</span></header>
+          <h3>هذا منزلي</h3>
+          <p class="lat end-en" dir="ltr">THIS IS MY HOME</p>
+          <p class="desc"><span class="q">؟؟؟</span> أحصل على النهاية الثانية.</p>
+        </article>
+        <article class="card end">
+          <header><span class="lat" dir="ltr">ENDING III</span></header>
+          <h3>خادمُ لا أكثر</h3>
+          <p class="lat end-en" dir="ltr">SERVANT NO MORE</p>
+          <p class="desc"><span class="q">؟؟؟</span> أحصل على النهاية الثالثة.</p>
+        </article>
+        <article class="card end">
+          <header><span class="lat" dir="ltr">ENDING IV</span></header>
+          <h3>اليوم الرابع</h3>
+          <p class="lat end-en" dir="ltr">THE FOURTH DAY</p>
+          <p class="desc"><span class="q">؟؟؟</span> أحصل على النهاية الرابعة.</p>
+        </article>
+        <article class="card end">
+          <header><span class="lat" dir="ltr">ENDING V</span></header>
+          <h3>تم القضاء على المغفلين!</h3>
+          <p class="lat end-en" dir="ltr">BOZOS WASTED!</p>
+          <p class="desc"><span class="q">؟؟؟</span> أحصل على النهاية الخامسة.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- كلام الرجل التلميح -->
+    <section id="quote" class="sec" aria-label="اقتباس من نهايات اللعبة">
+      <div class="tw-group quote-group">
+        <p class="tw q-line">«من الصعب أن تكوني على قيد الحياة!»</p>
+        <p class="tw q-line">«لقد كنتِ تحاولين أفضل ما لديك على الإطلاق!»</p>
+        <p class="tw q-line">«لا تتوقفي أبدًا عن المحاولة»</p>
+        <p class="tw q-line">«لا شيء لا مفر منه. هناك دائما طريقة.»</p>
+        <p class="tw q-line q-name">«ويكي… سوف نلتقي مرة أخرى»</p>
+      </div>
+    </section>
+
+    <!-- التحذيرات -->
+    <section id="triggers" class="sec">
+      <p class="kicker lat" dir="ltr">TRIGGERS</p>
+      <h2 class="sec-title">التحذيرات</h2>
+      <p class="sec-sub"><em>هذه اللعبة غير مناسبة للأطفال أو لمن يُصاب بالانزعاج بسهولة بسبب ما يلي:</em></p>
+      <ul class="triggers-list">
+        <li>العنف</li>
+        <li>الدماء ومزق الأعضاء</li>
+        <li>رعب الجسد</li>
+        <li>الرعب السمعي</li>
+        <li>التشويه</li>
+        <li>مشاهد مزعجة</li>
+        <li>أضواء وامضة</li>
+        <li>الإشارة إلى المخدرات والكحول</li>
+        <li>مواضيع ولغة جنسية</li>
+        <li>تصوير إيذاء الذات</li>
+        <li>أفكار انتحارية</li>
+        <li>رهبة العناكب</li>
+      </ul>
+      <p class="sec-sub">نتمنى أن تقدّر ذلك وتتوخّى الحذر.</p>
+    </section>
+
+    <!-- المطوّر -->
+    <section id="localization" class="sec">
+      <p class="kicker lat" dir="ltr"><span class="ar">التعريب</span> · LOCALIZATION</p>
+      <h2 class="sec-title">التعريب</h2>
+      <div class="loc-box">
+        <p class="loc-status" id="locStatus" aria-live="polite">حالة التعريب: <strong>قيد العمل</strong> — سيُتاح ملف التعريب هنا فور اكتماله.</p>
+        <a id="locDownload" class="btn btn-red" href="assets/translation.rpy" download="Gestalt: The Fifth Day AR.zip" hidden aria-disabled="true">Gestalt: The Fifth Day AR.zip</a>
+        <p class="loc-hint">زرّ التنزيل غير فعّال الآن — سيُنشَّط تلقائيًا عند وضع ملف <span class="lat" dir="ltr">translation.rpy</span> في مجلد <span class="lat" dir="ltr">assets/</span> مع تحديث رابط الزر.</p>
+      </div>
+    </section>
+
+    <section id="dev" class="sec">
+      <p class="kicker lat" dir="ltr">CREDITS</p>
+      <h2 class="sec-title">حقوق واعتمادات</h2>
+      <div class="dev-box">
+        <img src="assets/kinja.png" alt="أيقونة المطوّر KinjaKo كما تظهر في إنجاز «مرحبًا!» داخل اللعبة" width="100" height="100">
+        <div class="dev-text">
+          <p><strong>تطوير اللعبة:</strong> <span class="lat" dir="ltr">KinjaKo</span></p>
+          <p><strong>اللعبة على ستيم:</strong> <a class="lat" dir="ltr" href="https://store.steampowered.com/app/2616720/GESTALT_The_Fifth_Day/" rel="noopener noreferrer" target="_blank">Steam Store</a></p>
+          <p><strong>التعريب:</strong> <a class="lat" dir="ltr" href="https://x.com/B_L_M3" rel="noopener noreferrer" target="_blank">@B_L_M3</a></p>          <p><strong>عن هذا الموقع:</strong> موقع تعريفي غير رسمي من صنع المعجبين، بُني بعد قراءة ملفات اللعبة نفسها — نصوصها وخطوطها وصورها — ليعكس أجواءها وأسلوبها.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p><span class="lat" dir="ltr">GESTALT: The Fifth Day</span> © <span class="lat" dir="ltr">KinjaKo</span> — جميع حقوق اللعبة لمطوّرها.</p>
+    <p><a href="secrets.html">هناك ملفاتٌ في حاسوب ويكي… لن تندهس أبدًا</a></p>
+    <p class="foot-note">بُني هذا الموقع بخطّ الآلة الكاتبة نفسه الذي كُتبت به اللعبة، ومن أيدي المعجبين.</p>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

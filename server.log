@@ -1,0 +1,964 @@
+::1 - - [15/Sep/2026 19:29:59] "GET /index.html HTTP/1.1" 200 -
+----------------------------------------
+::1 - - [15/Sep/2026 19:30:45] "GET /index.html HTTP/1.1" 200 -
+Exception occurred during processing of request from ('::ffff:127.0.0.1', 55924, 0, 0)
+Traceback (most recent call last):
+  File "C:\Python314\Lib\socketserver.py", line 697, in process_request_thread
+    self.finish_request(request, client_address)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\http\server.py", line 1426, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                             directory=args.directory)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\http\server.py", line 736, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Python314\Lib\socketserver.py", line 766, in __init__
+    self.handle()
+    ~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\server.py", line 500, in handle
+    self.handle_one_request()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Python314\Lib\http\server.py", line 468, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Python314\Lib\socket.py", line 729, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+::1 - - [15/Sep/2026 19:30:45] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:30:45] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:30:45] "GET /assets/fonts/Truetypewriter.ttf HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:30:45] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:30:45] "GET /css/style.css HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:30:45] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:30:45] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:32:11] "GET /audio/theme.mp3 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:35:48] "GET /assets/owl1.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:35:48] "GET /assets/owl2.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:39:02] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:39:03] "GET /css/style.css HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:39:03] "GET /assets/fonts/Truetypewriter.ttf HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:39:03] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:39:03] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:39:03] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:39:03] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:44:05] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:44:06] "GET /assets/fonts/Truetypewriter.ttf HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:44:06] "GET /css/style.css HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:44:06] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:44:06] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:44:06] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:44:06] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:45:50] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:45:50] "GET /css/style.css HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:45:50] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:46:33] "GET /audio/theme.mp3 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:50:07] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:50:07] "GET /css/style.css HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:50:07] "GET /assets/fonts/Truetypewriter.ttf HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:50:07] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:50:07] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:50:07] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:50:07] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:51:58] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:51:58] "GET /css/style.css HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:51:58] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:51:58] "GET /assets/fonts/Truetypewriter.ttf HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:51:58] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:51:58] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:51:58] "GET /assets/owl1.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:51:58] "GET /assets/owl2.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:51:58] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:51:58] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:52:37] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:52:37] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:52:37] "GET /assets/fonts/Truetypewriter.ttf HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:52:37] "GET /css/style.css HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:52:37] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:52:37] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:52:37] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:52:37] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:55:45] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:55:45] "GET /css/style.css HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 19:55:45] "GET /assets/fonts/Truetypewriter.ttf HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:55:45] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:55:45] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:55:45] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 19:55:45] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:03:28] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:03:28] "GET /assets/fonts/Truetypewriter.ttf HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:03:28] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:03:28] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:03:28] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:03:28] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:03:28] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:03:28] "GET /assets/favicon.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:26:13] "GET /secrets.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:26:13] "GET /assets/fonts/Truetypewriter-subset.woff2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:26:13] code 404, message File not found
+::1 - - [15/Sep/2026 20:26:13] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 20:26:30] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:26:30] "GET /assets/fonts/Truetypewriter-subset.woff2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:26:30] "GET /css/style.css HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:26:30] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:26:30] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:26:30] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:26:30] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:26:30] code 404, message File not found
+::1 - - [15/Sep/2026 20:26:30] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 20:26:48] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:26:48] "GET /assets/fonts/Truetypewriter-subset.woff2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:26:48] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:26:48] "GET /css/style.css HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:26:48] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:26:49] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:26:49] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:26:49] code 404, message File not found
+::1 - - [15/Sep/2026 20:26:49] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 20:27:58] "GET /secrets.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:27:58] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:27:58] "GET /assets/fonts/Truetypewriter-subset.woff2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:30:31] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:30:31] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:30:31] "GET /assets/fonts/Truetypewriter-subset.woff2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:30:31] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:30:31] code 404, message File not found
+::1 - - [15/Sep/2026 20:30:31] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 20:32:56] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:32:56] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:32:56] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:32:56] code 404, message File not found
+::1 - - [15/Sep/2026 20:32:56] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 20:32:56] "GET /assets/fonts/Truetypewriter-subset.woff2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:36:27] "GET /secrets.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:36:27] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:36:27] "GET /assets/fonts/Truetypewriter-subset.woff2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:38:06] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:38:06] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:38:06] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:38:06] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:38:07] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:38:07] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:38:07] code 404, message File not found
+::1 - - [15/Sep/2026 20:38:07] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 20:57:00] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:57:00] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:57:00] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:57:00] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:57:00] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:57:00] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:57:00] "GET /assets/fonts/Truetypewriter-subset.woff2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:57:00] code 404, message File not found
+::1 - - [15/Sep/2026 20:57:00] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 20:58:16] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:58:16] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:58:16] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:58:16] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:58:16] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:58:16] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 20:58:16] "GET /assets/fonts/Truetypewriter-subset.woff2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 20:58:16] code 404, message File not found
+::1 - - [15/Sep/2026 20:58:16] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 20:58:16] "GET /assets/favicon.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:00:24] "GET /_fonttest.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:00:24] "GET /assets/fonts/Truetypewriter-subset.woff2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:00:24] "GET /assets/fonts/Truetypewriter-subset.ttf HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:00:24] code 404, message File not found
+::1 - - [15/Sep/2026 21:00:24] "GET /Truetypewriter.ttf HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:01:08] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:01:08] "GET /assets/fonts/Truetypewriter-subset.woff2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:01:08] code 404, message File not found
+::1 - - [15/Sep/2026 21:01:08] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:12:37] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:12:37] "GET /css/style.css HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:12:37] "GET /assets/fonts/Truetypewriter.ttf HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:12:37] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:12:37] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:12:37] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:12:37] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:12:37] code 404, message File not found
+::1 - - [15/Sep/2026 21:12:37] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:14:28] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:14:28] "GET /css/style.css HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:14:28] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:14:28] "GET /assets/fonts/Truetypewriter.ttf HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:14:28] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:14:28] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:14:28] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:14:28] code 404, message File not found
+::1 - - [15/Sep/2026 21:14:28] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:16:51] "GET /secrets.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:16:51] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:17:13] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:17:14] code 404, message File not found
+::1 - - [15/Sep/2026 21:17:14] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:19:19] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:19:19] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:19:20] code 404, message File not found
+::1 - - [15/Sep/2026 21:19:20] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:19:20] "GET /assets/favicon.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:19:33] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:19:33] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:19:33] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:19:33] code 404, message File not found
+::1 - - [15/Sep/2026 21:19:33] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:22:02] code 404, message File not found
+::1 - - [15/Sep/2026 21:22:02] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:27:47] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:27:47] "GET /css/style.css HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:27:47] "GET /assets/fonts/Truetypewriter.ttf HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:27:47] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:27:47] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:27:47] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:27:47] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:27:47] code 404, message File not found
+::1 - - [15/Sep/2026 21:27:47] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:34:22] "GET /secrets.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:34:22] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:37:37] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:37:37] "GET /assets/fonts/Truetypewriter.ttf HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:37:37] "GET /css/style.css HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:37:37] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:37:37] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:37:37] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:37:37] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:37:37] code 404, message File not found
+::1 - - [15/Sep/2026 21:37:37] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:37:37] "GET /assets/favicon.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:37:59] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:37:59] code 404, message File not found
+::1 - - [15/Sep/2026 21:37:59] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:39:27] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:39:27] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:39:27] code 404, message File not found
+::1 - - [15/Sep/2026 21:39:27] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:40:03] "GET /secrets.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:42:09] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:42:09] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:42:09] code 404, message File not found
+::1 - - [15/Sep/2026 21:42:09] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:42:17] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:42:17] code 404, message File not found
+::1 - - [15/Sep/2026 21:42:17] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:54:29] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:54:29] "GET /assets/fonts/Truetypewriter.ttf HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:54:29] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:54:29] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:54:29] "GET /css/style.css HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:54:29] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:54:29] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:54:29] code 404, message File not found
+::1 - - [15/Sep/2026 21:54:29] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:54:29] "GET /assets/favicon.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:55:18] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:55:18] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:55:18] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:55:18] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:55:18] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:55:18] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:55:18] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:55:18] code 404, message File not found
+::1 - - [15/Sep/2026 21:55:18] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:55:53] "GET /secrets.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:55:53] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 21:56:40] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:40] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:40] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:40] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:40] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:40] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:40] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:40] code 404, message File not found
+::1 - - [15/Sep/2026 21:56:40] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:56:40] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:46] "GET / HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:47] code 404, message File not found
+::1 - - [15/Sep/2026 21:56:47] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:56:56] "GET / HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:56] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:56] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:56] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:56] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:56] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:56] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 21:56:56] code 404, message File not found
+::1 - - [15/Sep/2026 21:56:56] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 21:56:57] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:00:09] "GET /secrets.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:00:09] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:00:14] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:00:14] code 404, message File not found
+::1 - - [15/Sep/2026 22:00:14] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:01:28] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:28] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:28] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:28] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:28] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:28] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:28] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:28] code 404, message File not found
+::1 - - [15/Sep/2026 22:01:28] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:01:28] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:38] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:38] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:38] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:38] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:38] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:38] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:38] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:01:38] code 404, message File not found
+::1 - - [15/Sep/2026 22:01:38] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:01:38] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:04] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:04] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:04] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:04] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:04] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:04] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:04] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:04] code 404, message File not found
+::1 - - [15/Sep/2026 22:02:04] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:02:04] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:05] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:05] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:05] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:05] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:05] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:05] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:05] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:05] code 404, message File not found
+::1 - - [15/Sep/2026 22:02:05] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:02:05] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:06] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:06] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:06] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:06] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:06] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:06] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:06] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:06] code 404, message File not found
+::1 - - [15/Sep/2026 22:02:06] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:02:06] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:07] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:07] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:07] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:07] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:07] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:07] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:07] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:07] code 404, message File not found
+::1 - - [15/Sep/2026 22:02:07] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:02:07] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:08] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:08] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:08] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:08] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:08] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:08] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:08] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:08] code 404, message File not found
+::1 - - [15/Sep/2026 22:02:08] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:02:08] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:09] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:09] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:09] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:09] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:09] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:09] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:09] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:09] code 404, message File not found
+::1 - - [15/Sep/2026 22:02:09] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:02:09] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:10] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:10] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:10] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:10] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:10] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:10] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:10] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:10] code 404, message File not found
+::1 - - [15/Sep/2026 22:02:10] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:02:10] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:11] "GET /secrets.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:11] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:11] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:02:11] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:38] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:38] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:38] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:38] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:38] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:38] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:38] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:38] code 404, message File not found
+::1 - - [15/Sep/2026 22:04:38] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:04:38] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:39] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:39] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:39] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:39] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:39] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:39] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:39] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:39] code 404, message File not found
+::1 - - [15/Sep/2026 22:04:39] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:04:39] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:40] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:40] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:40] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:40] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:40] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:40] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:40] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:40] code 404, message File not found
+::1 - - [15/Sep/2026 22:04:40] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:04:40] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:41] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:41] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:41] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:41] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:41] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:41] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:41] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:41] code 404, message File not found
+::1 - - [15/Sep/2026 22:04:41] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:04:41] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:42] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:42] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:42] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:42] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:42] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:42] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:42] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:42] code 404, message File not found
+::1 - - [15/Sep/2026 22:04:42] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:04:42] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:43] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:43] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:43] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:43] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:43] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:43] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:43] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:43] code 404, message File not found
+::1 - - [15/Sep/2026 22:04:43] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:04:43] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:44] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:44] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:44] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:44] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:44] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:44] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:44] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:44] code 404, message File not found
+::1 - - [15/Sep/2026 22:04:44] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:04:44] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:45] "GET /index.html?nosplash HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:45] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:45] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:45] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:45] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:45] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:45] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:04:45] code 404, message File not found
+::1 - - [15/Sep/2026 22:04:45] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:04:45] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:11] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:11] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:11] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:11] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:11] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:11] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:11] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:11] code 404, message File not found
+::1 - - [15/Sep/2026 22:05:11] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:05:11] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:12] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:12] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:12] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:12] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:12] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:12] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:12] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:12] code 404, message File not found
+::1 - - [15/Sep/2026 22:05:12] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:05:12] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:13] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:13] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:13] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:13] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:13] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:13] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:13] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:13] code 404, message File not found
+::1 - - [15/Sep/2026 22:05:13] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:05:13] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:14] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:14] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:14] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:14] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:14] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:14] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:14] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:14] code 404, message File not found
+::1 - - [15/Sep/2026 22:05:14] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:05:14] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:15] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:15] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:15] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:15] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:15] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:15] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:15] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:15] code 404, message File not found
+::1 - - [15/Sep/2026 22:05:15] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:05:15] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:16] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:16] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:16] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:16] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:16] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:16] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:16] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:16] code 404, message File not found
+::1 - - [15/Sep/2026 22:05:16] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:05:16] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:17] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:17] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:17] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:17] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:17] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:17] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:17] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:17] code 404, message File not found
+::1 - - [15/Sep/2026 22:05:17] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:05:17] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:18] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:18] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:18] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:18] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:18] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:18] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:18] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:18] code 404, message File not found
+::1 - - [15/Sep/2026 22:05:18] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:05:18] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:53] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:53] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:53] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:53] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:53] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:53] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:53] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:05:53] code 404, message File not found
+::1 - - [15/Sep/2026 22:05:53] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:05:54] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:24] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:24] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:24] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:24] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:24] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:24] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:24] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:24] code 404, message File not found
+::1 - - [15/Sep/2026 22:07:24] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:07:24] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:25] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:25] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:25] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:25] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:25] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:25] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:25] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:25] code 404, message File not found
+::1 - - [15/Sep/2026 22:07:25] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:07:25] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:26] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:26] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:26] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:26] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:26] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:26] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:26] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:26] code 404, message File not found
+::1 - - [15/Sep/2026 22:07:26] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:07:26] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:27] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:27] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:27] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:27] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:27] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:27] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:27] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:27] code 404, message File not found
+::1 - - [15/Sep/2026 22:07:27] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:07:27] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:28] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:28] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:28] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:28] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:28] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:28] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:28] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:28] code 404, message File not found
+::1 - - [15/Sep/2026 22:07:28] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:07:28] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:29] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:29] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:29] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:29] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:29] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:29] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:29] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:29] code 404, message File not found
+::1 - - [15/Sep/2026 22:07:29] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:07:29] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:30] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:30] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:30] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:30] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:30] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:30] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:30] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:30] code 404, message File not found
+::1 - - [15/Sep/2026 22:07:30] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:07:30] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:31] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:31] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:31] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:31] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:31] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:31] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:31] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:31] code 404, message File not found
+::1 - - [15/Sep/2026 22:07:31] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:07:31] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:32] "GET /secrets.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:32] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:32] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:07:32] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:50] "GET /index.html?nosplash&reveal=all&scroll=story HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:50] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:50] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:50] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:50] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:50] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:50] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:50] code 404, message File not found
+::1 - - [15/Sep/2026 22:08:50] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:08:50] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:51] "GET /index.html?nosplash&reveal=all&scroll=days HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:51] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:51] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:51] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:51] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:51] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:51] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:51] code 404, message File not found
+::1 - - [15/Sep/2026 22:08:51] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:08:51] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:52] "GET /index.html?nosplash&reveal=all&scroll=characters HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:52] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:52] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:52] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:52] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:52] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:52] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:52] code 404, message File not found
+::1 - - [15/Sep/2026 22:08:52] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:08:52] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:53] "GET /index.html?nosplash&reveal=all&scroll=endings HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:53] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:53] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:53] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:53] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:53] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:53] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:53] code 404, message File not found
+::1 - - [15/Sep/2026 22:08:53] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:08:53] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:54] "GET /index.html?nosplash&reveal=all&scroll=triggers HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:54] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:54] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:54] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:54] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:54] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:54] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:54] code 404, message File not found
+::1 - - [15/Sep/2026 22:08:54] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:08:54] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:55] "GET /index.html?nosplash&reveal=all&scroll=localization HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:55] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:55] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:55] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:55] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:55] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:55] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:55] code 404, message File not found
+::1 - - [15/Sep/2026 22:08:55] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:08:55] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:56] "GET /index.html?nosplash&reveal=all&scroll=dev HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:56] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:56] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:56] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:56] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:56] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:56] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:08:56] code 404, message File not found
+::1 - - [15/Sep/2026 22:08:56] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:08:56] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:09:33] "GET /index.html?nosplash&reveal=all&scroll=story HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:09:33] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:09:33] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:09:33] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:09:33] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:09:33] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:09:33] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:09:33] code 404, message File not found
+::1 - - [15/Sep/2026 22:09:33] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:09:33] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:10:31] "GET /index.html?nosplash&reveal=all&scroll=story HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:10:31] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:10:31] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:10:31] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:10:31] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:10:31] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:10:31] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:10:31] code 404, message File not found
+::1 - - [15/Sep/2026 22:10:31] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:10:31] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:23] "GET /index.html?nosplash&reveal=all&show=story HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:23] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:23] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:23] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:23] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:23] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:23] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:23] code 404, message File not found
+::1 - - [15/Sep/2026 22:11:23] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:11:23] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:44] "GET /index.html?nosplash&reveal=all&show=days HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:44] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:44] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:44] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:44] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:44] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:44] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:44] code 404, message File not found
+::1 - - [15/Sep/2026 22:11:44] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:11:44] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:45] "GET /index.html?nosplash&reveal=all&show=characters HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:45] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:45] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:45] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:45] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:45] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:45] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:45] code 404, message File not found
+::1 - - [15/Sep/2026 22:11:45] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:11:45] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:46] "GET /index.html?nosplash&reveal=all&show=endings HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:46] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:46] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:46] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:46] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:46] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:46] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:46] code 404, message File not found
+::1 - - [15/Sep/2026 22:11:46] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:11:46] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:47] "GET /index.html?nosplash&reveal=all&show=triggers HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:47] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:47] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:47] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:47] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:47] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:47] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:47] code 404, message File not found
+::1 - - [15/Sep/2026 22:11:47] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:11:47] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:48] "GET /index.html?nosplash&reveal=all&show=localization HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:48] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:48] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:48] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:48] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:48] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:48] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:48] code 404, message File not found
+::1 - - [15/Sep/2026 22:11:48] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:11:48] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:49] "GET /index.html?nosplash&reveal=all&show=dev HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:49] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:49] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:49] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:49] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:49] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:49] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:11:49] code 404, message File not found
+::1 - - [15/Sep/2026 22:11:49] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:11:49] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:14:00] "GET /index.html?nosplash&reveal=all&show=dev HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:14:00] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:14:00] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:14:00] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:14:00] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:14:00] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:14:00] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:14:00] code 404, message File not found
+::1 - - [15/Sep/2026 22:14:00] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:14:00] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:15:39] "GET /secrets.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:15:39] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:15:39] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:16:18] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:16:18] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:16:18] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:16:18] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:16:18] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:16:18] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:16:18] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:16:18] code 404, message File not found
+::1 - - [15/Sep/2026 22:16:18] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:16:18] "GET /assets/favicon.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:16:48] "GET /secrets.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:17:11] "GET /_envy-preview/ HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:17:11] "GET /_envy-preview/envy%20base1.jpg HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:17:11] "GET /_envy-preview/envy%20kit1.jpg HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:17:11] "GET /_envy-preview/envy%20tv1.jpg HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:17:11] "GET /_envy-preview/envy%20bath1.jpg HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:17:11] code 404, message File not found
+::1 - - [15/Sep/2026 22:17:11] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:18:29] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:18:29] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:18:29] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:18:29] code 404, message File not found
+::1 - - [15/Sep/2026 22:18:29] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:18:39] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:18:39] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:18:39] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:18:39] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:18:39] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:18:39] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:18:39] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:18:39] code 404, message File not found
+::1 - - [15/Sep/2026 22:18:39] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:18:39] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:20:20] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:20:20] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:20:20] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:20:20] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:20:20] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:20:20] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:20:20] code 404, message File not found
+::1 - - [15/Sep/2026 22:20:20] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:20:33] "GET /secrets.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:22:38] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:22:38] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:22:38] code 404, message File not found
+::1 - - [15/Sep/2026 22:22:38] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:24:56] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:24:56] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:24:56] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:24:56] code 404, message File not found
+::1 - - [15/Sep/2026 22:24:56] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:27:35] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:27:35] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:27:35] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:27:35] code 404, message File not found
+::1 - - [15/Sep/2026 22:27:35] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:29:03] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:29:03] code 404, message File not found
+::1 - - [15/Sep/2026 22:29:03] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:32:50] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:32:50] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:32:50] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:32:50] code 404, message File not found
+::1 - - [15/Sep/2026 22:32:50] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:34:11] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:34:11] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:34:11] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:34:11] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:34:11] code 404, message File not found
+::1 - - [15/Sep/2026 22:34:11] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:34:35] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:34:35] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:34:35] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:34:35] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:34:35] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:34:35] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:34:35] code 404, message File not found
+::1 - - [15/Sep/2026 22:34:35] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:34:35] "GET /assets/favicon.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:34:46] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:34:46] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:34:46] code 404, message File not found
+::1 - - [15/Sep/2026 22:34:46] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:35:01] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:35:01] code 404, message File not found
+::1 - - [15/Sep/2026 22:35:01] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:35:35] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:35:35] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:35:35] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:35:35] code 404, message File not found
+::1 - - [15/Sep/2026 22:35:35] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:35:57] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:35:57] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:35:57] code 404, message File not found
+::1 - - [15/Sep/2026 22:35:57] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:36:37] "GET /index.html?nosplash&reveal=all HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:37] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:37] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:37] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:37] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:37] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:37] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:37] code 404, message File not found
+::1 - - [15/Sep/2026 22:36:37] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:36:37] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:38] "GET /index.html?nosplash&reveal=all&show=dev HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:38] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:38] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:38] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:38] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:38] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:38] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:38] code 404, message File not found
+::1 - - [15/Sep/2026 22:36:38] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:36:38] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:39] "GET /index.html HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:39] "GET /css/style.css?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:39] "GET /assets/fonts/Truetypewriter.ttf?v=2 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:39] "GET /js/main.js HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:39] "GET /assets/kinja.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:39] "GET /assets/title.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:39] "GET /assets/hero.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:36:39] code 404, message File not found
+::1 - - [15/Sep/2026 22:36:39] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:36:39] "GET /assets/favicon.png HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:39:46] "GET /index.html?nosplash&reveal=all&cachebust=20260915 HTTP/1.1" 200 -
+::1 - - [15/Sep/2026 22:39:46] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:39:46] "GET /assets/hero.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:39:46] "GET /assets/title.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:39:46] "GET /assets/kinja.png HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:39:46] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:39:46] code 404, message File not found
+::1 - - [15/Sep/2026 22:39:46] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:39:59] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:39:59] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:39:59] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:39:59] code 404, message File not found
+::1 - - [15/Sep/2026 22:39:59] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:40:38] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:40:38] code 404, message File not found
+::1 - - [15/Sep/2026 22:40:38] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:40:40] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:40:40] code 404, message File not found
+::1 - - [15/Sep/2026 22:40:40] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
+::1 - - [15/Sep/2026 22:44:27] "GET /index.html HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:44:28] "GET /css/style.css?v=2 HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:44:28] "GET /js/main.js HTTP/1.1" 304 -
+::1 - - [15/Sep/2026 22:44:28] code 404, message File not found
+::1 - - [15/Sep/2026 22:44:28] "HEAD /assets/translation.rpy HTTP/1.1" 404 -
