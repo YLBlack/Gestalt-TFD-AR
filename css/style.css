@@ -7,7 +7,8 @@
 
 @font-face {
   font-family: "Truetypewriter";
-  src: url("../assets/fonts/Truetypewriter.ttf?v=6") format("truetype");
+  src: url("../assets/fonts/Truetypewriter.woff2?v=7") format("woff2"),
+       url("../assets/fonts/Truetypewriter-clean.ttf?v=7") format("truetype");
   font-weight: 400 700;
   font-style: normal;
   font-display: block;
