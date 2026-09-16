@@ -7,6 +7,11 @@
 
   var docEl = document.documentElement;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // ?motion=full — تجاوز صريح لتقليل حركة النظام (لاختبار البومة الطائرة)
+  if (window.location.search.indexOf("motion=full") !== -1) {
+    reduceMotion = false;
+    docEl.classList.add("motion-full");
+  }
   if (reduceMotion) docEl.classList.add("no-motion");
 
   var body = document.body;
@@ -26,6 +31,7 @@
     }, 600);
     body.classList.remove("locked");
     startReveals();
+    startOwls();
   }
 
   if (enterBtn) {
@@ -122,15 +128,24 @@
 
   /* ---------------------------------------------------------
      4) البومة — تعبر الشاشة بين حين وآخر
-        (إطار كل 0.7 ثانية كما في تعريف oowlanim في اللعبة)
+        القيم منسوخة من تعريف owlanim في game/definitions.rpy:
+        pause 8.0 → أول ظهور بعد 8 ثوانٍ من الدخول
+        إطار الجناح كل 0.7 ثانية (owlanim1/owlanim2)
+        xalign 0→3 خلال 8 ثوانٍ خطية → عبور مرئي ≈ 3.8 ثانية
+        ثم تُعاد الحركة كل 8 ثوانٍ
   --------------------------------------------------------- */
-  function spawnOwl() {
-    if (reduceMotion) return;
+  var OWL_FIRST_DELAY = 8000;
+  var OWL_CYCLE = 8000;
+  var OWL_CLEANUP = 4200;
+  var owlStarted = false;
+  function spawnOwl(perched) {
+    // مع تقليل الحركة: بومة جالسة ثابتة فقط (perched) — بلا عبور ولا رفرفة
+    if (reduceMotion && !perched) return;
     var hero = document.getElementById("hero");
     if (!hero || document.querySelector(".owl")) return;
 
     var owl = document.createElement("div");
-    owl.className = "owl wing-a";
+    owl.className = reduceMotion ? "owl perched wing-a" : "owl wing-a";
     owl.setAttribute("aria-hidden", "true");
 
     var a = document.createElement("img");
@@ -147,6 +162,8 @@
     owl.appendChild(b);
     hero.appendChild(owl);
 
+    if (perched) return; // جالسة: صفر حركة — احترام كامل لتقليل الحركة
+
     requestAnimationFrame(function () {
       owl.classList.add("flying");
     });
@@ -159,19 +176,28 @@
     setTimeout(function () {
       clearInterval(flap);
       owl.remove();
-    }, 14200);
+    }, OWL_CLEANUP);
   }
 
-  function scheduleOwl() {
+  function scheduleOwl(isFirst) {
     if (reduceMotion) return;
-    var delay = 18000 + Math.random() * 12000;
+    var delay = isFirst ? OWL_FIRST_DELAY : OWL_CYCLE;
     setTimeout(function () {
       spawnOwl();
-      scheduleOwl();
+      scheduleOwl(false);
     }, delay);
   }
 
-  scheduleOwl();
+  // تبدأ دورة البومة عند الدخول إلى الموقع (وليس تحميل الصفحة) —
+  // مثل اللعبة حيث يبدأ العد عند عرض المشهد. ?owl=now يُظهرها فورًا للاختبار.
+  function startOwls() {
+    if (owlStarted) return;
+    owlStarted = true;
+    // ?owl=now — بومة فور الدخول: طائرة عاديًا، جالسة مع تقليل الحركة
+    if (window.location.search.indexOf("owl=now") !== -1) spawnOwl(reduceMotion);
+    if (reduceMotion) return; // بومة واحدة جالسة تكفي — بلا دورة
+    scheduleOwl(true);
+  }
 
   /* ---------------------------------------------------------
      5) زر التعريب — يتفعّل تلقائيًا إذا وُجد ملف التعريب

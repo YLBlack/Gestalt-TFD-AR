@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Truetypewriter";
-  src: url("../assets/fonts/Truetypewriter.ttf?v=2") format("truetype");
+  src: url("../assets/fonts/Truetypewriter.ttf?v=6") format("truetype");
   font-weight: 400 700;
   font-style: normal;
   font-display: block;
@@ -426,13 +426,17 @@ body.locked { overflow: hidden; }
   50% { transform: translate(50%, 8px); }
 }
 
-/* البومة — تعبر الشاشة بين حين وآخر كما فيowlanim داخل اللعبة */
+/* البومة — تعبر الشاشة بين حين وآخر
+   القيم منسوخة من تعريف owlanim في game/definitions.rpy:
+   الحجم 150px على شاشة 1280 (11.7% من العرض) · yalign 0.3 → أعلى ≈ 23.5%
+   مهم: نستخدم left الفيزيائية — inset-inline-start تنقلب في RTL
+   (dir="rtl") فتبدأ البومة خارج يمين الشاشة ولا تظهر أبدًا. */
 .owl {
   position: absolute;
-  top: 14%;
-  inset-inline-start: -160px;
-  width: 120px;
-  height: 112px;
+  top: 23.5%;
+  left: -170px;
+  width: clamp(84px, 11.7vw, 200px);
+  aspect-ratio: 952 / 892;
   z-index: 1;
   opacity: 0.85;
   pointer-events: none;
@@ -440,23 +444,32 @@ body.locked { overflow: hidden; }
 }
 .owl img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   position: absolute;
-  inset-inline-start: 0;
+  left: 0;
   top: 0;
 }
 .owl img.b { opacity: 0; transition: opacity 0.05s; }
 .owl.wing-b img.b { opacity: 1; }
 .owl.wing-b img.a { opacity: 0; }
+
+/* بومة جالسة بلا أي حركة — تظهر حتى مع prefers-reduced-motion
+   (كانت تختفي كليًا في بيئات اللقطات والمعاينة التي تفرض تقليل الحركة) */
+.owl.perched {
+  left: auto;
+  right: 7%;
+}
+/* العبور بسرعة اللعبة نفسها: xalign 0→3 خلال 8 ثوانٍ على شاشة 1280
+   ≈ 424px/ث → عبور مرئي في ~3.8 ثانية (تدخل من خارج الحافة اليسرى) */
 .owl.flying {
-  animation: owlGlide 14s linear forwards;
+  animation: owlGlide 3.8s linear forwards;
 }
 @keyframes owlGlide {
-  0%   { inset-inline-start: -160px; opacity: 0; }
-  8%   { opacity: 0.85; }
-  92%  { opacity: 0.85; }
-  100% { inset-inline-start: calc(100% + 160px); opacity: 0; }
+  0%   { transform: translateX(0); opacity: 0; }
+  6%   { opacity: 0.85; }
+  94%  { opacity: 0.85; }
+  100% { transform: translateX(calc(100vw + 340px)); opacity: 0; }
 }
 
 /* ---------- الأقسام ---------- */
@@ -721,7 +734,6 @@ footer a:hover, footer a:focus-visible { color: var(--red); outline: none; }
   .dev-box { flex-direction: column; align-items: center; text-align: center; }
   .dev-box img { margin: 0 auto; }
   .q-line { font-size: 1rem; }
-  .owl { display: none; }
 }
 
 @media (max-width: 420px) {
@@ -739,5 +751,8 @@ footer a:hover, footer a:focus-visible { color: var(--red); outline: none; }
   .cursor { animation: none; }
   .scroll-hint { animation: none; }
   .owl { display: none; }
+  .owl.perched { display: block; }
+  /* ?motion=full — تجاوز صريح: البومة الطائرة تعمل حتى مع تقليل حركة النظام */
+  html.motion-full .owl { display: block; }
   .tw-box, .card, .btn { transition: none; }
 }
